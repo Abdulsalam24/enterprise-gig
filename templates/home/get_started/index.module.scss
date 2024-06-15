@@ -1,0 +1,59 @@
+@import "../../../styles/index.scss";
+
+.get_started {
+  background-color: #efede3;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    max-width: 1220px;
+    margin: 0 auto;
+    > div:nth-child(1) {
+      width: 45%;
+      h3 {
+        margin-bottom: 8px;
+      }
+    }
+    > div:nth-child(2) {
+      width: 40%;
+    }
+  }
+  button {
+    margin-top: 32px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .get_started {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 60px 20px;
+      max-width: 1220px;
+      margin: auto;
+      > div:nth-child(1) {
+        width: 100%;
+        h3 {
+          margin-bottom: 8px;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      > div:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}

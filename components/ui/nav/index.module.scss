@@ -1,0 +1,54 @@
+@import "../../../styles/index.scss";
+
+.nav {
+  position: relative;
+  padding: 20px 60px;
+  max-width: 1372px;
+  margin: 0 auto;
+}
+
+.nav_top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
+  .nav_right {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.nav_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px 32px;
+    gap: 40px;
+    color: white;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    li {
+      padding: 10px 0;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 20px 20px;
+  }
+  .nav_list {
+    > div {
+      display: none;
+    }
+  }
+}

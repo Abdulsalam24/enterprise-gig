@@ -1,0 +1,53 @@
+@import "../../../styles/index.scss";
+
+.certifcation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 600px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 43px 0 0 0;
+  > img:nth-child(1) {
+    align-self: flex-start;
+  }
+  > div:nth-child(2) {
+    align-self: center;
+    color: #5d5e60;
+    p {
+      line-height: 27px;
+    }
+  }
+  > img:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+.certifcation_text {
+  max-width: 510px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .certifcation {
+    flex-direction: column;
+    gap: 60px;
+
+    > img:nth-child(1) {
+      margin-top: -50px;
+      z-index: -3;
+    }
+    > img:nth-child(1),
+    > img:nth-child(3) {
+      width: 146px;
+      height: 146px;
+    }
+    > img:nth-child(3) {
+      align-self: end;
+    }
+  }
+}

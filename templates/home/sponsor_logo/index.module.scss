@@ -1,0 +1,22 @@
+@import "../../../styles/index.scss";
+
+.sponsor_logo {
+  background: #f6f5ef;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    padding: 40px;
+    @media (max-width: 600px) {
+      padding: 20px;
+      gap: 24px;
+      img {
+        width: 15%;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "./media-query.scss";
+
+@font-face {
+  font-family: poppins;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url("../assets/fonts/DM_Sans/static/DMSans-Regular.ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: poppins !important;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: DMSans;
+  line-height: 26.528px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  outline: none;
+}
+
+h3 {
+  font-size: 4rem;
+  color: black;
+  font-weight: 500;
+  line-height: 60.2px;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+
+.container {
+  padding: 0 60px;
+  max-width: 1372px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 38px;
+  }
+}
